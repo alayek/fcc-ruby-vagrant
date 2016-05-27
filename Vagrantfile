@@ -48,7 +48,7 @@ Vagrant.configure("2") do |config|
           gems:    {
                      "2.3.1" => [
                        { name: "bundler", version: "~>1.12.4" },
-                       { name: "rspec",   version: "~>3.4.4"  },
+                       { name: "rspec",   version: "~>3.4.0"  },
                        { name: "rails",   version: "~>4.2.6"  },
                      ]
 		   }
