@@ -14,10 +14,8 @@ There are three levels: local machine, Vagrant VM, and virtualenv within the Vag
 
 - .gitignore
 - Vagrantfile
-- provisioning.sh
+- Cheffile
 - README.md
-- Procfile
-- runtime.txt
 
 #### Local Programs installed
 
@@ -36,14 +34,15 @@ These are system-wide installations within the Vagrant VM, after running `vagran
 
 #### Programmes
 
-- Ruby
+- ruby 2.3.1
 - rbenv
 - build-essential
-- dos2unix
+- rails 4.2.x
+- dos2unix -nope
 - gem
 - bundle
 - rake
-- RSpec #not yet
+- RSpec
 - man
 - Git
 - Heroku toolbelt
@@ -76,14 +75,6 @@ You need to have the following programmes installed on your local machine before
 
 If you are on Windows, restart your local machine after the installation of these programmes.
 
-### Vagrant Requirements
-We use 2 vagrant plugins:
--vagrant-vbguest automatically installs the host's VirtualBox Guest Additions on the guest system.
--vagrant-librarian-chef let's us automatically run chef when we fire up our machine.
-
-We install these plugins like so:
-1. vagrant plugin install vagrant-vbguest
-2. vagrant plugin install vagrant-librarian-chef-nochef
 ### First Time Usage
 
 1. Run `git clone https://github.com/alayek/fcc-ruby-vagrant.git`
